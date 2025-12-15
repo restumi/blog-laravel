@@ -35,28 +35,7 @@
                 </a>
                 <ul class="sidebar-submenu">
                 <li>
-                    <a href="/hobbies">Hobbies</a>
-                </li>
-                <li>
-                    <a href="/students">Students
-                    </a>
-                </li>
-                </ul>
-            </li>
-            <li class="">
-                <a href="javascript:void(0)" class="navItem">
-                <span class="flex items-center">
-                <iconify-icon class=" nav-icon" icon="heroicons-outline:document"></iconify-icon>
-                <span>Social</span>
-                </span>
-                <iconify-icon class="icon-arrow" icon="heroicons-outline:chevron-right"></iconify-icon>
-                </a>
-                <ul class="sidebar-submenu">
-                <li>
-                    <a href="/posts">Posts</a>
-                </li>
-                <li>
-                    <a href="/videos">Videos</a>
+                    <a href="{{ route('blogs.index') }}">Blogs</a>
                 </li>
                 </ul>
             </li>

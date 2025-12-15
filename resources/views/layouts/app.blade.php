@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
     <script src="{{ asset('assets/js/settings.js') }}" sync></script>
 
+    <!-- Summernote CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.css" rel="stylesheet">
+
     @stack('styles')
 </head>
 <body class="font-inter dashcode-app" id="body_class">
@@ -40,7 +43,7 @@
                     <div class="page-content">
                         <div class="transition-all duration-150 container-fluid" id="page_layout">
                             <div id="content_layout">
-                                @yield('content') <!-- 👈 INI TEMPAT KONTEN HOBBIES -->
+                                @yield('content') 
                             </div>
                         </div>
                     </div>
@@ -102,6 +105,9 @@
     <script>
         document.getElementById('thisYear').textContent = new Date().getFullYear();
     </script>
+
+    <!-- Summernote JS -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.js"></script>
 
     @stack('scripts')
 </body>
